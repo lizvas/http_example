@@ -3,8 +3,8 @@ var https = require('https');
 console.log('I did it!');
 
 var options = {
-  host: 'www.example.org',
-  path: '/'
+  host: 'stream-large-file.herokuapp.com',
+  path: '/give-me-stuff-now'
 };
 
 // called by https when the request is made.
@@ -23,8 +23,4 @@ https.request(options, callback).end();
 
 console.log("I've made the request!");
 
-//in the terminal, it outpts:
-// I did it!
-// I'm about to make the request!
-// I've made the request!
-// In response handler callback!
+//prints tehe Monty Python script
